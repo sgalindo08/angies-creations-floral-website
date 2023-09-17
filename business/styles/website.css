@@ -5,8 +5,11 @@
 body {
   background: #c9e0ff;
 }
-h1 {
+h1,
+h2,
+p {
   color: var(--heading-font-color);
+  text-shadow: 1px 1px #434343;
 }
 .logo {
   margin-right: 30px;
@@ -21,13 +24,9 @@ h1 {
   font-size: 64px;
   line-height: 100px;
 }
-.about-section h2 {
-  color: var(--heading-font-color);
-}
 .about-section p {
   font-size: 17px;
   line-height: 2;
-  color: var(--heading-font-color);
 }
 .btn-branding {
   background: var(--branding-color);
