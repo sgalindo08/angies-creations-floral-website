@@ -1,39 +1,69 @@
+:root {
+  --heading-font-color: #e9ceb3;
+  --branding-color: #759fd5;
+}
 body {
   background: #c9e0ff;
 }
 h1 {
-  color: #e9ceb3;
+  color: var(--heading-font-color);
 }
 .logo {
   margin-right: 30px;
   border-radius: 50%;
-  border: 2px solid #e9ceb3;
+  border: 2px solid var(--heading-font-color);
 }
 .about-section {
   padding: 90px 10px;
+  text-shadow: 1px 1px #434343;
 }
 .about-section h1 {
   font-size: 64px;
-  line-height: 80px;
+  line-height: 100px;
 }
 .about-section h2 {
-  color: #e9ceb3;
+  color: var(--heading-font-color);
 }
 .about-section p {
-  font-size: 18px;
-  color: #e9ceb3;
+  font-size: 17px;
+  line-height: 2;
+  color: var(--heading-font-color);
+}
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 7px;
+  color: white;
+  font-size: 17px;
+  line-height: 27px;
+  padding: 10px 8px;
+}
+.btn-branding:hover {
+  background: #4d70a2;
+  color: white;
+}
+.creator-picture {
+  transition: all 200ms ease-in-out;
+}
+.creator-picture:hover {
+  filter: contrast(65%);
+  transform: scale(1.1);
 }
 
 @media (max-width: 900px) {
-  h1 {
+  .about-section h1 {
+    font-size: 40px;
+  }
+  .about-section h2 {
     font-size: 30px;
-    line-height: 2;
+  }
+  .about-section p {
+    font-size: 15px;
   }
   h2 {
     font-size: 44px;
   }
   .about-section {
     text-align: center;
-    padding: 0;
+    margin-top: 2;
   }
 }
